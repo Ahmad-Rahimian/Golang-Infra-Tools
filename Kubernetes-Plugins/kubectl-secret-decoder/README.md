@@ -41,10 +41,11 @@ Output:
 📌 password = secret123
 
 ⚙️ Flags
-Flag	Short	Description	Required
---namespace	-n	Namespace of the secret(s)	Yes
---secretname	-s	Name of the secret (optional)	No
---kubeconfig	-k	Path to kubeconfig file (optional)	No
+Flag	        Short	Description	                         Required
+--namespace	     -n	    Namespace of the secret(s)	         Yes
+--secretname	 -s	    Name of the secret (optional)	     No
+--kubeconfig	 -k	    Path to kubeconfig file (optional)	 No
+
 🛠 Development
 
 Clone the repo:
