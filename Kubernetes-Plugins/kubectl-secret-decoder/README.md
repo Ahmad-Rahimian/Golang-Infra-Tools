@@ -30,6 +30,7 @@ Use custom kubeconfig file:
 
 kubectl-secret-decoder -n <namespace> -k /path/to/kubeconfig
 
+
 🧪 Examples
 
 kubectl-secret-decoder -n default -s my-secret
@@ -37,14 +38,22 @@ kubectl-secret-decoder -n default -s my-secret
 Output:
 
 🔐 Secret: default/my-secret
+
 📌 username = admin
+
 📌 password = secret123
 
+
 ⚙️ Flags
-Flag	        Short	Description	                         Required
+
+Flag            Short        Description                    Required
+
 --namespace	     -n	    Namespace of the secret(s)	         Yes
+
 --secretname	 -s	    Name of the secret (optional)	     No
+
 --kubeconfig	 -k	    Path to kubeconfig file (optional)	 No
+
 
 🛠 Development
 
