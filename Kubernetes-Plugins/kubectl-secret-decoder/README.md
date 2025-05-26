@@ -1,25 +1,24 @@
-# kubectl-secret-decoder 🔐
 
-A lightweight `kubectl` plugin written in Go to decode Kubernetes Secrets from the terminal, eliminating the need for manual base64 decoding.
+kubectl-secret-decoder 🔐
 
----
+A lightweight kubectl plugin written in Go to decode Kubernetes Secrets from the terminal, eliminating the need for manual base64 decoding.
+✨ Features
 
-## ✨ Features
+    Connects to your Kubernetes cluster using kubeconfig.
 
-- Connects to your Kubernetes cluster using kubeconfig.
-- Decode one or all secrets in a specified namespace.
-- Clean and colorized output for better readability.
-- Supports custom kubeconfig file location.
+    Decodes one or all secrets in a specified namespace.
 
----
+    Clean and colorized output for better readability.
 
-## 🚀 Installation
+    Supports custom kubeconfig file location.
 
-```bash
+🚀 Installation
+
 go install github.com/Ahmad-Rahimian/Golang-Infra-Tools/Kubernetes-Plugins/kubectl-secret-decoder@latest
 
 📦 Usage
-Decode a specific secret:
+
+    Decode a specific secret:
 
 kubectl-secret-decoder -n <namespace> -s <secret-name>
 
@@ -29,7 +28,7 @@ kubectl-secret-decoder -n <namespace>
 
 Use custom kubeconfig file:
 
-kubectl-secret-decoder -n <namespace> -k /path/to/kubeconfig
+    kubectl-secret-decoder -n <namespace> -k /path/to/kubeconfig
 
 🧪 Examples
 
@@ -51,7 +50,7 @@ Flag	Short	Description	Required
 Clone the repo:
 
 git clone https://github.com/Ahmad-Rahimian/Golang-Infra-Tools.git
-cd Golang-Plugins/kubectl-secret-decoder
+cd Kubernetes-Plugins/kubectl-secret-decoder
 go run main.go -n default
 
 Build the binary:
