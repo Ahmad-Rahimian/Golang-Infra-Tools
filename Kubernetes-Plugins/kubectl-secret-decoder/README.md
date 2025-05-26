@@ -6,7 +6,7 @@ A lightweight kubectl plugin written in Go to decode Kubernetes Secrets from the
 
     Connects to your Kubernetes cluster using kubeconfig.
 
-    Decodes one or all secrets in a specified namespace.
+    Decode one or all secrets in a specified namespace.
 
     Clean and colorized output for better readability.
 
@@ -18,7 +18,7 @@ go install github.com/Ahmad-Rahimian/Golang-Infra-Tools/Kubernetes-Plugins/kubec
 
 📦 Usage
 
-    Decode a specific secret:
+Decode a specific secret:
 
 kubectl-secret-decoder -n <namespace> -s <secret-name>
 
@@ -28,7 +28,7 @@ kubectl-secret-decoder -n <namespace>
 
 Use custom kubeconfig file:
 
-    kubectl-secret-decoder -n <namespace> -k /path/to/kubeconfig
+kubectl-secret-decoder -n <namespace> -k /path/to/kubeconfig
 
 🧪 Examples
 
